@@ -5,6 +5,7 @@ class Main {
     // Function to calculate the sum of numbers in a list
     static int calculateSum(List<Integer> numbers) {
         int sum = 0;
+        // for loop to go through every number and add it up.
         for (int num : numbers) {
             sum += num;
         }
@@ -12,21 +13,21 @@ class Main {
     }
 
     public static void main(String[] args) {
-        // Variables
+        // Setting Variables
         int num1 = 5;
         int num2 = 7;
 
-        // Expressions
+        // Expressions to compare the number attained from the sum.
         int result = num1 + num2;
 
-        // Conditionals
+        // Conditionals. Is the summed number < or >10?
         if (result > 10) {
             System.out.println("Result is greater than 10");
         } else {
             System.out.println("Result is not greater than 10");
         }
 
-        // Loops
+        // Loops to go through the provided numbers in a list:
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         numbers.add(2);
@@ -39,7 +40,7 @@ class Main {
         }
         System.out.println();
 
-        // Function call
+        // Function call to deliver final result.
         int sum = calculateSum(numbers);
         System.out.println("Sum of numbers: " + sum);
     }
